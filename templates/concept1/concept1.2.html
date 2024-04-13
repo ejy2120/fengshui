@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>  
+    <script type="text/javascript" src="{{ url_for('static', filename = 'homepage.js') }}"></script>
+
+    <link rel="stylesheet" href="../static/css/main.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    
+    <title>Concept 1: Command Position</title>
+</head>
+<body>
+    <!--Include the navbar using Flask-->
+    {% include 'navbar.html' %} 
+    
+    <div class="container">
+        <div class="row">
+            <h1>Example of bed in command position</h1>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8" id="room">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="{{ url_for('static', filename='images/bed.png') }}" id="bad-bed">
+                        </div>
+                        <div class="col-md-4"></div>
+                        <div class="col-md-4">
+                            <img src="{{ url_for('static', filename='images/bed.png') }}" id="good-bed">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4"><img src="{{ url_for('static', filename='images/window.png') }}" id="window"></div>
+                        <div class="col-md-4"></div>
+                        <div class="col-md-4"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="{{ url_for('static', filename='images/door.png') }}" id="door">
+                        </div>
+                        <div class="col-md-4"></div>
+                        <div class="col-md-4"></div>
+                    </div>
+            </div>
+
+            <div class="col-md-4" style="border: black 1px solid">
+                <div class="text-bubble">Second, the bed should not be directly in line with the door.</div>
+                <button onclick="window.location.href='/concept1-1'">Prev</button>
+                <button>Next</button>
+            </div>
+        </div>
+
+    </div>
+    
+    
+
+</body>
+</html>

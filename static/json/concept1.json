@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "header": "Example of bed in command position",
+        "text": "First, when on the bed, one should have a view of the room and door."
+    },
+    {
+        "id": 2,
+        "header": "Example of bed in command position",
+        "text": "Second, the bed should not be directly in line with the door."
+    },
+    {
+        "id": 3,
+        "header": "Example of bed in command position",
+        "text": "Also, avoid “coffin position” where the feet of the bed are facing the door. This resembles how we carry the dead in a coffin."
+    }
+]
