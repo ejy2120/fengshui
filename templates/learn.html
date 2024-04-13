@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>  
+    <script type="text/javascript" src="{{ url_for('static', filename = 'homepage.js') }}"></script>
+
+    <link rel="stylesheet" href="../static/main.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    
+    <title>Homepage</title>
+</head>
+<body>
+    <!--Include the navbar using Flask-->
+    {% include 'navbar.html' %} 
+    
+    <div class="container">
+        <p>Feng shui (say: fung sh-way) is an ancient Chinese art of arranging objects in a space for harmony and balance.</p>
+        <p>There are four principles of feng shui for the bedroom:</p>
+        <ul>
+            <li>Command Position</li>
+            <li>Symmetry</li>
+            <li>Chi</li>
+            <li>Earth Element</li>
+        </ul> 
+        <button onclick="window.location.href='/concept1'">Continue</button>
+    </div>
+
+</body>
+</html>
