@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+
+    <link rel="stylesheet" href="../static/css/main.css" />
+    <link rel="stylesheet" href="../static/css/concept2.css" />
+    <link
+      rel="stylesheet"
+      href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spectral&display=swap"
+      rel="stylesheet"
+    />
+    <title>Concept 2: Symmetry</title>
+  </head>
+  <body>
+    <!--Include the navbar using Flask-->
+    {% include 'navbar.html' %}
+
+    <div class="container spectral-regular">
+      <div class="row">
+        <h1 class="examples-header">Example of Symmetry</h1>
+      </div>
+
+      <div class="row">
+        <div class="col-md-8" id="symmetry-ex1">
+          <img src="{{ url_for('static', filename='images/sym-ex1.png') }}" />
+        </div>
+
+        <div class="col-md-4" style="border: black 1px solid">
+          <div class="text-bubble">
+            To attain symmetry, have objects in pairs (e.g. nightstands) on each
+            side of the bed.
+          </div>
+          <button
+            onclick="window.location.href='/concept2-2'"
+            class="btn-next mt-3"
+          >
+            Next
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

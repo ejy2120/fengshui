@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+
+    <link rel="stylesheet" href="../static/css/main.css" />
+    <link rel="stylesheet" href="../static/css/concept3.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    />
+
+    <title>Concept 2: Symmetry</title>
+  </head>
+  <body>
+    <!-- Include the navbar using Flask -->
+    {% include 'navbar.html' %}
+
+    <div class="container spectral-regular">
+      <div class="row">
+        <h1 class="examples-header">Self-check: Mirrors and chi</h1>
+      </div>
+
+      <div class="row">
+        <div class="col-md-8" id="chi-room">
+          <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+              <div class="row">
+                <div class="col-md-4"></div>
+                <div
+                  class="col-md-4 droppable wrong-position"
+                  style="border: #84735e 3px dashed; height: 145px"
+                ></div>
+                <div class="col-md-4"></div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="row">
+                <div class="col-md-4"></div>
+                <div
+                  class="col-md-4 droppable chi-op2 correct-position"
+                  style="border: #84735e 3px dashed; height: 145px"
+                ></div>
+                <div class="col-md-4"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Window -->
+          <div class="row">
+            <div class="col-md-4 mt-4">
+              <img
+                src="{{ url_for('static', filename='images/window.png') }}"
+                id="chi-window"
+              />
+            </div>
+            <div class="col-md-4"></div>
+            <div class="col-md-4"></div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="row">
+                <div class="col-md-10"></div>
+                <div class="col-md-2">
+                  <img
+                    src="{{ url_for('static', filename='images/painting.png') }}"
+                    id="painting"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 text-center">
+              <img
+                src="{{ url_for('static', filename='images/door.png') }}"
+                id="chi-door"
+              />
+            </div>
+            <div class="col-md-4">
+              <div class="row">
+                <div class="col-md-4">
+                  <img
+                    src="{{ url_for('static', filename='images/painting.png') }}"
+                    id="painting"
+                  />
+                </div>
+                <div class="col-md-8"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-4 d-flex justify-content-center align-items-center"
+          style="border: black 1px solid"
+        >
+          <div class="row">
+            <div class="row">
+              <div class="col-md-4"></div>
+              <div class="col-md-4"></div>
+              <div class="col-md-4">
+                <img
+                  src="{{ url_for('static', filename='images/mirror.png') }}"
+                  id="mirror"
+                />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-1"></div>
+              <div class="col-md-10 text-center">
+                <div class="text-bubble3">
+                  Drag and drop the mirror to attain the most positive chi.
+                </div>
+              </div>
+              <div class="col-md-1"></div>
+            </div>
+
+            <div class="row mt-3">
+              <div class="col-md-12 text-center">
+                <button
+                  id="try-again-button"
+                  class="try-button"
+                  style="display: none"
+                >
+                  Try again
+                </button>
+              </div>
+            </div>
+
+            <div class="row mt-3">
+              <div class="col-md-12 text-center">
+                <button
+                  id="next-concept-button"
+                  class="next-button"
+                  style="display: none"
+                >
+                  Next Concept
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="{{ url_for('static', filename='scripts/concept3.js') }}"></script>
+  </body>
+</html>

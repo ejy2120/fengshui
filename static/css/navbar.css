@@ -1,0 +1,56 @@
+/* Additional CSS for organization */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.spectral-regular {
+  font-family: "Spectral", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container {
+  margin: 0 auto;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 10px 0; */
+}
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+}
+.navbar-links {
+  display: flex;
+  text-decoration: none;
+}
+.navbar-links a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #333; /* Adjust color as needed */
+  font-size: 18px;
+}
+.navbar-links a:hover {
+  text-decoration: none; /* Remove underline on hover */
+  color: #000000;
+}
+.navbar-links a:last-child {
+  margin-right: 0;
+}
+.active-page {
+  background-color: #cfb7a1;
+  color: #ffffff !important; /* Change text color to white */
+  padding: 2px 15px;
+  border-radius: 5px;
+}
+
+/* Horizontal line styling */
+.navbar hr {
+  flex: 1; /* Fill remaining space */
+  height: 1px;
+  background-color: #333;
+  margin: 0 20px; /* Balanced gap on both sides */
+}
