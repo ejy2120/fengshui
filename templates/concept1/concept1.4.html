@@ -41,10 +41,10 @@
             </div>
             <div class="row">
                 <div class="col-md-4">
-                    <div style="border: 3px dashed #84735e; width: 200px; height: 150px; margin-top: -60%; margin-left: -8%" class="droppable incorrect-div"></div>
+                    <div class="droppable incorrect-div"></div>
                 </div>
                 <div class="col-md-4">
-                    <div style="border: 3px dashed #84735e; width: 150px; height: 200px; margin-top: 60px" class="droppable correct-div"></div>
+                    <div class="droppable correct-div"></div>
                 </div>
                 <div class="col-md-4"></div>
             </div>   
@@ -54,7 +54,7 @@
 
         <div class="col-md-4">
             <div class="text-center">
-                <img src="{{ url_for('static', filename='images/bed.png') }}" style="width: 150px; margin-bottom: 50px" class="draggable">
+                <img src="{{ url_for('static', filename='images/bed.png') }}" class="draggable bed-img">
             </div>
             <div class="text-center text-bubble3">Drag and drop the bed to the command position.</div>
             <button id="next-concept-button" class="next-button" style="display: none; margin-top: 10px;">Next Concept</button>

@@ -12,3 +12,23 @@
   height: auto;
   border-radius: 20px;
 }
+
+.incorrect-div{
+  border: 3px dashed #84735e;
+  width: 200px;
+  height: 150px;
+  margin-top: -60%;
+  margin-left: -8%;
+}
+
+.correct-div{
+  border: 3px dashed #84735e;
+  width: 150px;
+  height: 200px;
+  margin-top: 60px
+}
+
+.bed-img{
+  width: 150px;
+  margin-bottom: 50px;
+}
