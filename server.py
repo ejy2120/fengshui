@@ -11,6 +11,10 @@ concept_mapping = {
 with open('static/json/concept-about.json') as f:
     concepts_data = json.load(f)
 
+@app.route('/')
+def home2():
+    return render_template('home.html')
+
 @app.route('/home')
 def home():
     return render_template('home.html')

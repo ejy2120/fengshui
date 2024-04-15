@@ -1,0 +1,14 @@
+#command-ex img {
+  max-width: 100%;
+  height: auto;
+}
+
+.text-bubble3 {
+  text-align: center;
+  padding: 20px;
+  margin-top: -10px;
+  background-color: #ede2d7ff;
+  width: auto;
+  height: auto;
+  border-radius: 20px;
+}

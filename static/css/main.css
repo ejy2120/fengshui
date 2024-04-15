@@ -12,29 +12,6 @@
   margin-bottom: 15px;
 }
 
-#good-bed {
-  width: 100px;
-  height: 150px;
-  border: 6px #83a29d solid;
-  border-radius: 5px;
-}
-
-#bad-bed {
-  width: 100px;
-  height: 150px;
-  margin-left: 50px;
-  border: 6px #cc0000 solid;
-  border-radius: 5px;
-}
-
-#room {
-  background-color: #dbd6d3ff;
-  border-radius: 5px;
-  height: 400px;
-  width: 600px;
-  margin-top: 30px;
-}
-
 .correct-drop {
   border: 3px solid #83a29d !important;
 }
@@ -84,10 +61,11 @@
   padding: 20px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   background-color: #ede2d7ff;
   margin-top: 30%;
-  width: 90%;
-  height: 160px;
+  width: 100%;
+  height: auto;
   border-radius: 20px;
 }
