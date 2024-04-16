@@ -1,0 +1,44 @@
+#command-ex img {
+    max-width: 100%;
+    height: auto;
+    }
+    
+    .text-bubble3 {
+    text-align: center;
+    padding: 20px;
+    margin-top: -10px;
+    background-color: #ede2d7ff;
+    width: auto;
+    height: auto;
+    border-radius: 20px;
+    }
+    
+    .correct-div{
+    border: 3px dashed #84735e;
+    height: 140px;
+    width: 70px;
+    margin-top: 52%;
+    margin-left: 10%;
+    }
+    
+    .incorrect-div1{
+    border: 3px dashed #84735e;
+    height: 140px;
+    width: 70px;
+    margin-top: -113%;
+    margin-left: 80%;
+    }
+    
+    .mirror-img{
+    width: 90px;
+    margin-bottom: 50px;
+    border-radius: 100px;
+    }
+    
+    .correct-drop {
+    border: 10px solid green;
+    }
+    
+    .incorrect-drop {
+        border: 10px solid #E06666;
+    }

@@ -37,7 +37,11 @@ body {
   text-decoration: none; /* Remove underline on hover */
   color: #000000;
 }
-.navbar-links a:last-child {
+.navbar-brand a:hover {
+  text-decoration: none; /* Remove underline on hover */
+  color: #000000;
+}
+.navbar-links .navbar a:last-child {
   margin-right: 0;
 }
 .active-page {

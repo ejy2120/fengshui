@@ -16,19 +16,22 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
     />
-    <title>Concept 1: Command Position</title>
+    <title>Quiz: Intro</title>
   </head>
   <body>
     <!--Include the navbar using Flask-->
     {% include 'navbar.html' %}
 
-    <div class="container spectral-regular">
+    <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h2>{{ concept.header}}</h2>
-          <p>{{ concept.text}}</p>
-          <button onclick="window.location.href='/concept1-1'">
-            Start Learning
+          <h2>Quiz</h2>
+          <p>Rearrange the furniture in the bedroom according to feng shui principles. 
+ 
+            Each furniture item will show up one by one.
+            </p>
+          <button onclick="window.location.href='/quiz1'">
+            Start Quiz
           </button>
         </div>
       </div>

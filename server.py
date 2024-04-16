@@ -2,10 +2,6 @@ from flask import Flask, render_template, json
 
 app = Flask(__name__)
 
-concept_mapping = {
-    '1-1': 'concept1.1.html',
-    '1-2': 'concept1.2.html'
-}
 
 # Load JSON data
 with open('static/json/concept-about.json') as f:
@@ -43,9 +39,9 @@ def concept_about(concept_id):
 def concept_example(concept_id, example_page_id):
     return render_template(f'concept{concept_id}/concept{concept_id}.{example_page_id}.html')
     
-@app.route('/quiz')
-def quiz():
-    return render_template('quiz.html')
+@app.route('/quiz<int:quiz_id>')
+def quiz(quiz_id):
+    return render_template(f'/quizzes/quiz{quiz_id}.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
