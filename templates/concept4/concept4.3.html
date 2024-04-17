@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+
+    <link rel="stylesheet" href="../static/css/main.css" />
+    <link rel="stylesheet" href="../static/css/concept4.css" />
+
+    <link
+      rel="stylesheet"
+      href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    />
+
+    <title>Concept 4: Earth Element</title>
+  </head>
+  <body>
+    <!--Include the navbar using Flask-->
+    {% include 'navbar.html' %}
+    <div class="container spectral-regular">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Earth element – clay + terracotta</h2>
+          <div class="row">
+            <div class="col">
+                <img class="img-fluid" src="{{ url_for('static', filename='images/earth-bad.png') }}"/>
+            </div>
+            <div class="col">
+                <div class="text-bubble">However, <b>avoid metal</b> objects in the bedroom as the metal element <b>clashes</b> with earth. Too much metal energy is associated with feelings of <b>being weighed down</b>.</div>
+                <button onclick="window.location.href='/concept4-2'">Prev</button>
+                <button onclick="window.location.href='/concept4-4'" class="btn-next mt-3">Next</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

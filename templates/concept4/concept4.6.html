@@ -4,14 +4,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Link to the common CSS file -->
-    <link rel="stylesheet" href="../static/css/common.css" />
-
-    <!-- Your existing script and stylesheet links -->
     <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
 
-    <link rel="stylesheet" href="../static/css/home.css" />
+    <link rel="stylesheet" href="../static/css/main.css" />
+    <link rel="stylesheet" href="../static/css/concept4.css" />
+
     <link
       rel="stylesheet"
       href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
@@ -29,9 +27,17 @@
     <div class="container spectral-regular">
       <div class="row">
         <div class="col-md-12">
-          <h2>{{ concept.header}}</h2>
-          <p>{{ concept.text}}</p>
-          <button onclick="window.location.href='/concept4-1'">Continue</button>
+          <h2>Earth element – cotton and wool rugs</h2>
+          <div class="row">
+            <div class="col">
+                <img class="img-fluid" src="{{ url_for('static', filename='images/earth-rug-bad.png') }}"/>
+            </div>
+            <div class="col">
+                <div class="text-bubble">However, avoid rugs with <b>sharp</b> or <b>angular shapes</b>, as these can create a sense of <b>dissonance</b>.</div>
+                <button onclick="window.location.href='/concept4-5'">Prev</button>
+                <button onclick="window.location.href='/quiz0'">Take Quiz</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
