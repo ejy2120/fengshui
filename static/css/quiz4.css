@@ -1,0 +1,20 @@
+.text-bubble3 {
+    text-align: center;
+    padding: 20px;
+    margin-top: -10px;
+    background-color: #ede2d7ff;
+    width: auto;
+    height: auto;
+    border-radius: 20px;
+    display: block; /* Ensure this is set to block to allow margin manipulations */
+    margin-bottom: 10px; /* Space between the text bubble and buttons */
+}
+
+.try-button, .next-button {
+    display: block; /* Block display to fill the text width */
+    width: 100%; /* Take full width of the container */
+    text-align: center; /* Center text inside the button */
+    white-space: nowrap; /* Prevent wrapping of text inside */
+    overflow: hidden; /* Prevent overflow */
+    text-overflow: ellipsis; /* Manage overflowing text in a neat way if ever necessary */
+}
