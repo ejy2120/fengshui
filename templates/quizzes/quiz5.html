@@ -38,66 +38,32 @@
 
         <div class="row">
             <div class="col-3">
-                <img src="{{ url_for('static', filename='images/clay-vase.png') }}" height="260" width ="200"/>
+                <img id="clay-vase" src="{{ url_for('static', filename='images/clay-vase.png') }}" height="260" width ="200"/>
                 <br>
                 <b>Clay Vase</b>
                 <br>
-                <button>Select</button>
+                <button id="select-clay">Select</button>
             </div>
             <div class="col-3">
-                <img src="{{ url_for('static', filename='images/brass-vase.png') }}" height="260" width ="200"/>
+                <img id="brass-vase" src="{{ url_for('static', filename='images/brass-vase.png') }}" height="260" width ="200"/>
                 <br>
                 <b>Brass Vase</b>
                 <br>
-                <button>Select</button>
+                <button id="select-brass">Select</button>
             </div>
             <div class="col-3">
-                <img src="{{ url_for('static', filename='images/steel-vase.png') }}" height="260" width ="200"/>
+                <img id="steel-vase" src="{{ url_for('static', filename='images/steel-vase.png') }}" height="260" width ="200"/>
                 <br>
                 <b>Steel Vase</b>
                 <br>
-                <button>Select</button>
+                <button id="select-steel">Select</button>
             </div>
+        </div>
+        <div class="col-3" id="feedback-column">
+            <div class="text-bubble3" style="display: none;" id="feedback-message"></div>
+            <button id="try-again-button" class="try-button" style="display: none;" onclick="location.reload();">Try Again</button>
+            <button id="next-question-button" class="next-button" style="display: none;" onclick="window.location.href='quiz6';">Next ></button>
         </div>
     </div>
-
-    <!-- <div class="container spectral-regular">
-      <div class="row">
-        <h1 class="examples-header">Move the <b>bed</b> to <b>command position</b> and <b>symmetry</b>.
-        </h1>
-      </div>
-
-      <div class="row">
-
-        <div class="col-md-8" id="command-ex">
-            <div class="row">
-                <img src="{{ url_for('static', filename='images/quiz1.png') }}"/>
-            </div>
-            <div class="row">
-                
-                <div class="col-md-4">
-                    <div class="droppable incorrect-div1"></div>
-                    <div class="droppable correct-div"></div>
-                </div>
-                <div class="col-md-4">
-                    <div class="droppable incorrect-div2"></div>
-                </div>
-                <div class="col-md-4"></div>
-            </div>   
-            
-                
-            
-        </div>
-
-        <div class="col-md-4">
-            <div class="text-center">
-                <img src="{{ url_for('static', filename='images/quiz-bed.png') }}" class="draggable bed-img">
-            </div>
-            <div class="text-center text-bubble3">Drag and drop the bed to the command position.</div>
-            <button id="next-question-button" class="next-button" style="display: none; margin-top: 10px;">Next Question</button>
-            <button id="try-again-button" class="try-button" style="display: none; margin-top: 10px"> Try again </button>
-        </div>
-      </div>
-    </div> -->
   </body>
 </html>
