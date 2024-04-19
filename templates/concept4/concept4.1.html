@@ -4,12 +4,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <!-- Link to the common CSS file -->
+    <link rel="stylesheet" href="../static/css/common.css" />
+
+    <!-- Your existing script and stylesheet links -->
     <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
 
     <link rel="stylesheet" href="../static/css/main.css" />
-    <link rel="stylesheet" href="../static/css/concept4.css" />
-
+    <link rel="stylesheet" href="../static/css/concept1.css" />
     <link
       rel="stylesheet"
       href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
@@ -24,19 +27,28 @@
   <body>
     <!--Include the navbar using Flask-->
     {% include 'navbar.html' %}
+
     <div class="container spectral-regular">
       <div class="row">
         <div class="col-md-12">
-          <h2>Earth element – natural materials</h2>
-          <div class="row">
-            <div class="col">
-                <img class="img-fluid" src="{{ url_for('static', filename='images/wool.png') }}"/>
-            </div>
-            <div class="col">
-                <div class="text-bubble">Natural materials like <b>wool, cotton, clay,</b> and <b>terracotta</b> are considered “earthy” because of their <b>origin from organic sources</b> and <b>tactile texture</b>.</div>
-                <button onclick="window.location.href='/concept4-2'" class="btn-next mt-3">Next</button>
-            </div>
-          </div>
+          <h2 style="padding: 10px">Earth Element</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 center">
+          <img src="{{ url_for('static', filename='images/earth-2.png') }}" style="width:450px; margin-top: 0px"/>
+          <br>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+
+      <div class="row center" style="margin-left: 240px; margin-right: 240px">
+        <p>Clay and terracotta are found in earthy <b>colors</b> like <b>beige, brown, red,</b> and <b>orange,</b> which evoke feelings of <b>warmth</b> and <b>comfort.</b></p>
+        <div class="col-md-3 d-flex justify-content-end" style="margin-left: 500px">
+          <button onclick="window.location.href='/concept4'" style="margin-right: 500px;">Prev</button>
+          <button onclick="window.location.href='/concept4-2'">Next</button>
         </div>
       </div>
     </div>
