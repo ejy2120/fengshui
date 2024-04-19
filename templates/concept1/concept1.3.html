@@ -6,6 +6,7 @@
 
     <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+    <script src="{{ url_for('static', filename='scripts/concept1.js') }}"></script>
 
     <link rel="stylesheet" href="../static/css/main.css" />
     <link rel="stylesheet" href="../static/css/concept1.css" />
@@ -30,22 +31,34 @@
 
     <div class="container spectral-regular">
       <div class="row">
-        <h1 class="examples-header">Example of Command Position</h1>
+        <h1 class="examples-header">Self-Check: Command Position</h1>
       </div>
 
       <div class="row">
         <div class="col-md-8" id="command-ex">
-          <img src="{{ url_for('static', filename='images/com-ex3.png') }}" />
+            <div class="row">
+                <img src="{{ url_for('static', filename='images/command-selfcheck.png') }}" style="width: 700px"/>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="droppable incorrect-div"></div>
+                </div>
+                <div class="col-md-4">
+                    <div class="droppable correct-div"></div>
+                </div>
+                <div class="col-md-4"></div>
+            </div>   
+                
+            
         </div>
 
-        <div class="col-md-4" style="border: black 1px solid">
-          <div class="text-bubble">
-            Also, avoid “coffin position” where the feet of the bed are facing the door. This resembles how we carry the dead in a coffin.
-          </div>
-          <button onclick="window.location.href='/concept1-2'">Prev</button>
-          <button
-            onclick="window.location.href='/concept1-4'"
-            class="btn-next mt-3">Next</button>
+        <div class="col-md-4">
+            <div class="text-center">
+                <img src="{{ url_for('static', filename='images/bed2.png') }}" class="draggable bed-img" style="width: 300px">
+            </div>
+            <div class="text-center text-bubble3">Drag and drop the bed to the command position.</div>
+            <button id="next-concept-button" class="next-button" style="display: none; margin-top: 20px; padding: 10px">Next Concept</button>
+            <button id="try-again-button" class="try-button" style="display: none; margin-top: 10px; padding: 10px"> Try again </button>
         </div>
       </div>
     </div>

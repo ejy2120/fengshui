@@ -14,18 +14,18 @@
 }
 
 .incorrect-div{
-  border: 3px dashed #84735e;
+  border: none;
   width: 200px;
   height: 150px;
-  margin-top: -60%;
-  margin-left: -8%;
+  margin-top: -80%;
 }
 
 .correct-div{
-  border: 3px dashed #84735e;
+  border: none;
   width: 150px;
   height: 200px;
-  margin-top: 60px
+  margin-top: 60px;
+  margin-left: -30%;
 }
 
 .bed-img{
@@ -54,5 +54,4 @@ button {
 
 button:hover {
   cursor: pointer;
-  border: solid 3px #84735eff;
 }

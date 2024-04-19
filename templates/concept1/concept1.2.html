@@ -17,11 +17,6 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
     />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Spectral&display=swap"
-      rel="stylesheet"
-    />
     <title>Concept 1: Command Position</title>
   </head>
   <body>
@@ -30,24 +25,31 @@
 
     <div class="container spectral-regular">
       <div class="row">
-        <h1 class="examples-header">Example of Command Position</h1>
+        <div class="col-md-12">
+          <h2 style="padding: 10px">Command Position</h2>
+        </div>
       </div>
 
       <div class="row">
-        <div class="col-md-8" id="command-ex">
-          <img src="{{ url_for('static', filename='images/com-ex2.png') }}" />
+        <div class="col-md-2"></div>
+        <div class="col-md-8 center">
+          <img src="{{ url_for('static', filename='images/command-3.png') }}" style="width: 400px; margin-top: 30px"/>
         </div>
+        <div class="col-md-2"></div>
+      </div>
 
-        <div class="col-md-4" style="border: black 1px solid">
-          <div class="text-bubble">
-            Second, the bed should not be directly in line with the door because it's believed that you will absorb any bad energy or luck entering through the door when sleeping.
-          </div>
-          <button onclick="window.location.href='/concept1-1'">Prev</button>
-          <button
-            onclick="window.location.href='/concept1-3'"
-            class="btn-next mt-3">Next</button>
+      <div class="row center">
+        <div class="col-md-3"></div>
+        <div class="col-md-6 d-flex justify-content-end" style="margin-top: 30px">
+          <p>Avoid the  “coffin position” where the feet of the bed are facing the door because it resembles how we carry the dead in a coffin. 
+          </p>
+        </div>
+        <div class="col-md-3 d-flex justify-content-end" style="margin-left: 200px">
+          <button onclick="window.location.href='/concept1-1'" style="margin-right: 20px"> < Prev</button>
+          <button onclick="window.location.href='/concept1-3'">Self-Check > </button>
         </div>
       </div>
+
     </div>
   </body>
 </html>

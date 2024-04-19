@@ -14,7 +14,7 @@ border-radius: 20px;
 }
 
 .correct-div{
-border: 3px dashed #84735e;
+border: none;
 height: 200px;
 width: 150px;
 margin-top: -90%;
@@ -22,7 +22,7 @@ margin-left: 230%;
 }
 
 .incorrect-div1{
-border: 3px dashed #84735e;
+border: none;
 height: 200px;
 width: 150px;
 margin-top: -110%;
@@ -30,7 +30,7 @@ margin-left: 50%;
 }
 
 .incorrect-div2{
-border: 3px dashed #84735e;
+border: none;
 width: 150px;
 height: 200px;
 margin-top: 50px;
@@ -42,10 +42,12 @@ width: 125px;
 margin-bottom: 50px;
 }
 
-.correct-drop {
-border: 10px solid green;
+button {
+    padding: 10px;
 }
 
-.incorrect-drop {
-    border: 10px solid #E06666;
+h1{
+    font-size: 25px; 
+    margin-top: 20px; 
+    margin-bottom: 50px
 }

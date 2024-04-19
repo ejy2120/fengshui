@@ -20,8 +20,6 @@ $(document).ready(function() {
         console.log("Dropped on: ", droppable.attr("class"));
   
         if (droppable.hasClass("correct-div")) {
-            $(this).addClass("correct-drop");
-
             $("#next-question-button").show();
 
             $("#try-again-button").hide();
@@ -33,11 +31,7 @@ $(document).ready(function() {
 
             $(".green-text").css({ color: "#19676B", "font-weight": "bold" });
 
-            $("img[src='{{ url_for('static', filename='images/com-selfcheck.png') }}']").attr("src", "{{ url_for('static', filename='images/com-selfcheck-right.png') }}");
-
         } else if (droppable.hasClass("incorrect-div1")) {
-            $(this).addClass("incorrect-drop");
-
             $("#next-question-button").hide();
 
             $("#try-again-button").show();
@@ -53,8 +47,6 @@ $(document).ready(function() {
             $(".draggable").draggable("disable"); // Disable draggable behavior
         }
         else if (droppable.hasClass("incorrect-div2")) {
-            $(this).addClass("incorrect-drop");
-
             $("#next-question-button").hide();
 
             $("#try-again-button").show();
@@ -73,10 +65,6 @@ $(document).ready(function() {
     });
 
     $("#try-again-button").click(function () {
-        $(".correct-div").removeClass("correct-drop");
-        $(".incorrect-div1").removeClass("incorrect-drop");
-        $(".incorrect-div2").removeClass("incorrect-drop");
-    
         $(".draggable").css({ top: 0, left: 0 });
         $("#try-again-button").hide();
         $("#next-concept-button").hide();
