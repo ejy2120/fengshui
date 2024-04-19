@@ -11,7 +11,8 @@
     <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
 
-    <link rel="stylesheet" href="../static/css/home.css" />
+    <link rel="stylesheet" href="../static/css/main.css" />
+    <link rel="stylesheet" href="../static/css/concept1.css" />
     <link
       rel="stylesheet"
       href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
@@ -26,12 +27,28 @@
   <body>
     <!--Include the navbar using Flask-->
     {% include 'navbar.html' %}
+
     <div class="container spectral-regular">
       <div class="row">
         <div class="col-md-12">
-          <h2>{{ concept.header}}</h2>
-          <p>{{ concept.text}}</p>
-          <button onclick="window.location.href='/concept4-1'">Continue</button>
+          <h2 style="padding: 10px">{{ concept.header }}</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 center">
+          <img src="{{ url_for('static', filename='images/earth-1.png') }}" style="width:450px; margin-top: 0px"/>
+          <br>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+
+      <div class="row center" style="margin-left: 240px; margin-right: 240px">
+        <p>The <b>earth</b> element in feng shui is believed to bring <b>stability</b> and <b>grounding energy</b> to the bedroom.</p>
+        <p>Incorporate the earth element with <b>natural materials</b> like <b>wool, cotton, clay,</b> and <b>terracotta,</b> which are considered “earthy” because of their <b>origin from organic sources</b> and <b>tactile texture.</b></p>
+        <div class="col-md-3 d-flex justify-content-end" style="margin-left: 500px">
+          <button onclick="window.location.href='/concept4-1'">Next</button>
         </div>
       </div>
     </div>
