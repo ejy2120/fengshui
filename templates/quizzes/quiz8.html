@@ -30,23 +30,26 @@
 
     <div class="container spectral-regular">
       <div class="row">
-        <div class="col-md-12">
-          <p style="margin-left: 240px; padding: 10px" ><b>Congrats!</b> Look at your beautiful bedroom with amazing feng shui!</p>
+        <div class="col-md-12 center">
+          <p style="margin-bottom: 5px;">You got</p>
+          <h3 style="color: darkgreen; font-weight: bold;">_/5 correct</h3>
+          <p>on the first try!</p>
         </div>
       </div>
 
       <div class="row">
         <div class="col-md-2"></div>
         <div class="col-md-8 center">
-          <img src="{{ url_for('static', filename='images/fengshui-room.png') }}" style="width:500px"/>
+          <img src="{{ url_for('static', filename='images/house-plant.webp') }}" style="width:200px"/>
           <br>
+          <p>Here’s a plant as a <b>housewarming gift!</b></p>
         </div>
         <div class="col-md-2"></div>
       </div>
 
-      <div class="row center" style="margin-left: 240px; margin-right: 240px">
-        <div class="col-md-3 d-flex justify-content-end" style="margin-left: 440px">
-          <button onclick="window.location.href='/quiz8'">Next</button>
+      <div class="row">
+        <div class="col-md-3 center d-flex justify-content-end" style="margin-left: 440px">
+          <button onclick="window.location.href='/home'" style="white-space: nowrap">Collect and return home</button>
         </div>
       </div>
     </div>
