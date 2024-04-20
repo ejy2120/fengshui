@@ -31,37 +31,35 @@
 
     <div class="container spectral-regular">
         <div class="row">
-            <h1 class="examples-header">
+            <h1 class="examples-header"
+            style="font-size: 25px; margin-left: 40px; margin-top: 50px; margin-bottom: 50px">
                 Fourth, select the <b>best rug</b> to place under the bed.
             </h1>
         </div>
 
         <div class="row">
-            <div class="col-3">
+            <div class="col-md-3 text-center">
                 <img id="polyester-rug" src="{{ url_for('static', filename='images/polyester-rug.png') }}" height="300" width ="240"/>
                 <br>
-                <b>Polyester Rug</b>
-                <br>
+                <p style="margin-top: 20px; font-size: 20px">Polyester Rug</p>
                 <button id="select-polyester">Select</button>
             </div>
-            <div class="col-3">
-                <img id="cotton-rug" src="{{ url_for('static', filename='images/cotton-rug.png') }}" height="300" width ="240"/>
+            <div class="col-md-3 text-center">
+                <img id="cotton-rug" src="{{ url_for('static', filename='images/cotton-rug.png') }}" height="300" width ="240" />
                 <br>
-                <b>Cotton Rug</b>
-                <br>
+                <p style="margin-top: 20px; font-size: 20px">Cotton Rug</p>
                 <button id="select-cotton">Select</button>
             </div>
-            <div class="col-3">
+            <div class="col-md-3 text-center">
                 <img id="fiber-rug" src="{{ url_for('static', filename='images/fiber-rug.png') }}" height="300" width ="240"/>
                 <br>
-                <b>Plant Fiber Rug</b>
-                <br>
+                <p style="margin-top: 20px; font-size: 20px">Plant Fiber Rug</p>
                 <button id="select-fiber">Select</button>
             </div>
-            <div class="col-3" id="feedback-column">
+            <div class="col-md-3" id="feedback-column">
                 <div class="text-bubble3" style="display: none;" id="feedback-message"></div>
                 <button id="try-again-button" class="try-button" style="display: none;" onclick="location.reload();">Try Again</button>
-                <button id="next-question-button" class="next-button" style="display: none;" onclick="window.location.href='quiz5';">Next ></button>
+                <button id="next-question-button" class="next-button" style="display: none;" onclick="window.location.href='quiz5';">Next Question</button>
             </div>                    
         </div>
     </div>

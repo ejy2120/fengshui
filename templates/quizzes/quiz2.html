@@ -6,10 +6,10 @@
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+    <script src="{{ url_for('static', filename='scripts/quiz2.js') }}"></script>
 
     <link rel="stylesheet" href="../static/css/main.css" />
     <link rel="stylesheet" href="../static/css/concept2.css" />
-    <link rel="stylesheet" href="../static/css/quiz2.css" />
 
     <link
       rel="stylesheet"
@@ -20,7 +20,7 @@
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
     />
 
-    <title>Quiz: Symmetry</title>
+    <title>Concept 2: Symmetry</title>
   </head>
   <body>
     <!-- Include the navbar using Flask -->
@@ -28,41 +28,26 @@
 
     <div class="container spectral-regular">
       <div class="row">
-        <h1 class="examples-header">Second, move the <b>nightstands</b> for <b>symmetry and balance</b> in the bedroom.
+        <h1 class="examples-header"
+        style="font-size: 25px; margin-left: 40px; margin-top: 50px; margin-bottom: 50px">
+        Second, choose <b>complementary furniture</b> so we have <b>symmetry and balance</b> in the bedroom.
         </h1>
       </div>
+
       <div class="row">
-        <div class="col-md-8" id="symmetry-ex1">
-          <div >
-            <div class="row">
-              <div class="col-md-4">
-                <div class="row">
-                  <div class="col-md-6"></div>
-                  <div
-                    class="col-md-4 droppable"
-                    id="drop1"
-                    style="border: #84735e 3px dashed"
-                  ></div>
-                  <div class="col-md-2"></div>
-                </div>
-              </div>
-              <div class="col-md-4" style="width: 800px">
-                <img
-                  src="{{ url_for('static', filename='images/quiz2.png') }}"
-                  style="width: 700px"
-                />
-              </div>
-              <div class="col-md-4">
-                <div class="row">
-                  <div class="col-md-2"></div>
-                  <div
-                    class="col-md-4 droppable"
-                    id="drop2"
-                    style="border: #84735e 3px dashed"
-                  ></div>
-                  <div class="col-md-6"></div>
-                </div>
-              </div>
+        <div class="col-md-8">
+          <div class="row">
+            <img
+              src="{{ url_for('static', filename='images/quiz-sym.png') }}"
+              style="width: 500px; margin-left: 40px"
+            />
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="droppable incorrect-div"></div>
+            </div>
+            <div class="col-md-6">
+              <div class="droppable correct-div"></div>
             </div>
           </div>
         </div>
@@ -71,12 +56,13 @@
           <div class="row">
             <div class="col-md-1"></div>
 
-            <div class="col-md-10 text-bubble2">
-              Drag and drop bedside furniture for symmetry in the bedroom.
+            <div class="col-md-10 text-bubble2"
+              style="height: 65px">
+              Drag and drop bedside furniture.
             </div>
 
             <div class="row mt-3">
-              <div class="col-md-12 text-center">
+              <div class="col-md-12">
                 <button
                   id="try-again-button"
                   class="try-button"
@@ -88,13 +74,13 @@
             </div>
 
             <div class="row mt-3">
-              <div class="col-md-12 text-center">
+              <div class="col-md-12">
                 <button
                   id="next-concept-button"
                   class="next-button"
                   style="display: none"
                 >
-                  Next Concept
+                  Next Question
                 </button>
               </div>
             </div>
@@ -102,40 +88,43 @@
             <div class="col-md-1"></div>
           </div>
 
-          <div class="row">
+          <div class="row mt-4">
             <div class="col-md-1"></div>
-            <div class="col-md-5 text-center pt-4">
+            <div class="col-md-5">
               <img
-                src="{{ url_for('static', filename='images/quiz-basket.png') }}"
+                src="{{ url_for('static', filename='images/quiz-dresser1.png') }}"
                 id="sym-options"
                 class="img-fluid draggable"
+                style="width: 75px; margin-top: 20px"
               />
             </div>
-            <div class="col-md-5 text-center pt-4">
+            <div class="col-md-5">
               <img
-                src="{{ url_for('static', filename='images/quiz-table1.png') }}"
+                src="{{ url_for('static', filename='images/quiz-sym-basket.png') }}"
                 id="sym-options"
                 class="img-fluid draggable"
-                style="height: 60px; width: auto"
+                style="width: 75px;  margin-top: 20px"
               />
             </div>
             <div class="col-md-1"></div>
           </div>
           <div class="row">
             <div class="col-md-1"></div>
-            <div class="col-md-5 text-center pt-4">
+            <div class="col-md-5">
               <img
-                src="{{ url_for('static', filename='images/quiz-table2.png') }}"
+                src="{{ url_for('static', filename='images/quiz-dresser2.png') }}"
                 id="sym-options"
                 class="img-fluid draggable"
-                style="height: 60px; width: auto"
+                style="width: 75px"
               />
+              <div class="col-md-1"></div>
             </div>
-            <div class="col-md-5 text-center pt-4">
+            <div class="col-md-5">
               <img
-                src="{{ url_for('static', filename='images/quiz-plant.png') }}"
+                src="{{ url_for('static', filename='images/quiz-sym-plant.png') }}"
                 id="sym-options"
                 class="img-fluid draggable"
+                style="width: 75px"
               />
             </div>
             <div class="col-md-1"></div>
@@ -143,6 +132,5 @@
         </div>
       </div>
     </div>
-    <script src="{{ url_for('static', filename='scripts/quiz2.js') }}"></script>
   </body>
 </html>

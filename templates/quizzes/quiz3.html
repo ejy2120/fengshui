@@ -23,7 +23,7 @@
       href="https://fonts.googleapis.com/css2?family=Spectral&display=swap"
       rel="stylesheet"
     />
-    <title>Quiz: Chi</title>
+    <title>Concept 3: Chi</title>
   </head>
   <body>
     <!--Include the navbar using Flask-->
@@ -31,38 +31,58 @@
 
     <div class="container spectral-regular">
       <div class="row">
-        <h1 class="examples-header">Move the <b>mirror</b> for <b>positive <i>chi</i> flow</b>.
+        <h1 class="examples-header"
+            style="font-size: 25px; margin-left: 40px; margin-top: 50px; margin-bottom: 50px">
+            Third, <b>move the mirror</b> to a location that will <b>boost positive chi </b>throughout the room.
         </h1>
       </div>
 
       <div class="row">
-
-        <div class="col-md-8" id="command-ex">
-            <div class="row">
-                <img src="{{ url_for('static', filename='images/quiz3.png') }}"/>
+        <div class="col-md-8">
+          <div class="row">
+            <img
+              src="{{ url_for('static', filename='images/quiz-chi.png') }}"
+              style="width: 600px; margin-left: 5%"
+              id="chi-selfcheck"
+            />
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="droppable incorrect-div"></div>
             </div>
-            <div class="row">
-                
-                <div class="col-md-4">
-                    <div class="droppable incorrect-div1"></div>
-                </div>
-                <div class="col-md-4">
-                    <div class="droppable correct-div"></div>
-                </div>
-                <div class="col-md-4"></div>
-            </div>   
-            
-                
-            
+            <div class="col-md-4">
+              <div class="droppable correct-div"></div>
+            </div>
+            <div class="col-md-4"></div>
+          </div>
         </div>
 
-        <div class="col-md-4">
-            <div class="text-center">
-                <img src="{{ url_for('static', filename='images/quiz-mirror.png') }}" class="draggable mirror-img">
-            </div>
-            <div class="text-center text-bubble3">Drag and drop the bed to the command position.</div>
-            <button id="next-question-button" class="next-button" style="display: none; margin-top: 10px;">Next Question</button>
-            <button id="try-again-button" class="try-button" style="display: none; margin-top: 10px"> Try again </button>
+        <div class="col-md-4 chi-txt-and-mirror">
+          <div class="text-center">
+            <img
+              src="{{ url_for('static', filename='images/quiz-mirror.png') }}"
+              class="draggable"
+              id="mirror"
+              style="width: 60px; margin-top: 5px; margin-bottom: -50px"
+            />
+          </div>
+          <div class="text-center text-bubble3">
+            Drag and drop the mirror to attain the most positive chi.
+          </div>
+          <button
+            id="next-concept-button"
+            class="next-button"
+            style="display: none; margin-top: 20px; padding: 10px"
+          >
+            Next Question
+          </button>
+          <button
+            id="try-again-button"
+            class="try-button"
+            style="display: none; margin-top: 10px; padding: 10px"
+          >
+            Try again
+          </button>
         </div>
       </div>
     </div>

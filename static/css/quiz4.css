@@ -10,14 +10,34 @@
     margin-bottom: 10px; /* Space between the text bubble and buttons */
 }
 
-.try-button, .next-button {
-    display: block; /* Block display to fill the text width */
-    width: 100%; /* Take full width of the container */
-    text-align: center; /* Center text inside the button */
-    white-space: nowrap; /* Prevent wrapping of text inside */
-    overflow: hidden; /* Prevent overflow */
-    text-overflow: ellipsis; /* Manage overflowing text in a neat way if ever necessary */
+.try-button {
+    text-align: center;  
+    padding: 10px;
+    width: 100px;
+    margin-left: 180px
 }
+
+.next-button {
+    text-align: center;  
+    padding: 10px;
+    width: 150px;
+    margin-left: 130px
+}
+
+
+button {
+    font-size: 20px;
+    background-color: #cfb7a1ff;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    border: none;
+    border-radius: 10px !important; 
+    cursor: pointer;
+  }
+  
+  button:hover {
+    cursor: pointer;
+  }
 
 .green-text {
     color: #19676B;

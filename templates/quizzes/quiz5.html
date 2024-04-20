@@ -31,37 +31,35 @@
 
     <div class="container spectral-regular">
         <div class="row">
-            <h1 class="examples-header">
+            <h1 class="examples-header"
+            style="font-size: 25px; margin-left: 40px; margin-top: 50px; margin-bottom: 50px">
                 Fifth, select the <b>best pottery</b> for bedroom decor.
             </h1>
         </div>
 
         <div class="row">
-            <div class="col-3">
-                <img id="clay-vase" src="{{ url_for('static', filename='images/clay-vase.png') }}" height="260" width ="200"/>
+            <div class="col-3 text-center">
+                <img id="clay-vase" src="{{ url_for('static', filename='images/clay-vase.png') }}" height ="150"/>
                 <br>
-                <b>Clay Vase</b>
-                <br>
+                <p style="margin-top: 20px; font-size: 20px">Clay Vase</p>
                 <button id="select-clay">Select</button>
             </div>
-            <div class="col-3">
-                <img id="brass-vase" src="{{ url_for('static', filename='images/brass-vase.png') }}" height="260" width ="200"/>
+            <div class="col-3 text-center">
+                <img id="brass-vase" src="{{ url_for('static', filename='images/brass-vase.png') }}"  height ="150"/>
                 <br>
-                <b>Brass Vase</b>
-                <br>
+                <p style="margin-top: 20px; font-size: 20px">Brass Vase</p>
                 <button id="select-brass">Select</button>
             </div>
-            <div class="col-3">
-                <img id="steel-vase" src="{{ url_for('static', filename='images/steel-vase.png') }}" height="260" width ="200"/>
+            <div class="col-3 text-center">
+                <img id="steel-vase" src="{{ url_for('static', filename='images/steel-vase.png') }}" height ="150"/>
                 <br>
-                <b>Steel Vase</b>
-                <br>
+                <p style="margin-top: 20px; font-size: 20px">Steel Vase</p>
                 <button id="select-steel">Select</button>
             </div>
         <div class="col-3" id="feedback-column">
             <div class="text-bubble3" style="display: none;" id="feedback-message"></div>
             <button id="try-again-button" class="try-button" style="display: none;" onclick="location.reload();">Try Again</button>
-            <button id="next-question-button" class="next-button" style="display: none;" onclick="window.location.href='quiz6';">Next ></button>
+            <button id="next-question-button" class="next-button" style="display: none;" onclick="window.location.href='quiz6';">Next Question</button>
         </div>
     </div>
     </div>
