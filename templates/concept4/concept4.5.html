@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Link to the common CSS file -->
+    <link rel="stylesheet" href="../static/css/common.css" />
+
+    <!-- Your existing script and stylesheet links -->
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+    <script src="{{ url_for('static', filename='scripts/concept4.js') }}"></script>
+
+    <link rel="stylesheet" href="../static/css/main.css" />
+    <link rel="stylesheet" href="../static/css/concept4.css" />
+    <link
+      rel="stylesheet"
+      href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    />
+
+    <title>Concept 4: Earth Element</title>
+  </head>
+  <body>
+    <!--Include the navbar using Flask-->
+    {% include 'navbar.html' %}
+    <div class="container spectral-regular">
+      <div class="row">
+        <div class="col-md-12" style="margin-left: 240px; padding: 10px">
+          <h2>Self-check: Earth Element</h2>
+          <p style="display: block">Select all items that align with the earth element.</p>
+          <div class="text-center text-bubble3" style="display: none;" id="feedback-message"></div>
+        </div>
+        </div>
+    <!-- First row of items -->
+    <div class="row" style="margin-left: 190px;">
+        <div class="col-md-3 selectable-item correct-item">
+          <img class="selectable-image" style="height: 125px; width: 125px; display: block; margin: auto;" src="{{ url_for('static', filename='images/earth-sc-1.png') }}"/>
+          <b class="center">Woven reed basket</b>
+        </div>
+        <div class="col-md-3 selectable-item incorrect-item">
+          <img class="selectable-image" style="height: 125px; width: 125px; display: block; margin: auto;" src="{{ url_for('static', filename='images/earth-sc-2.png') }}"/>
+          <b class="center">Copper vase</b>
+        </div>
+        <div class="col-md-3 selectable-item correct-item">
+          <img class="selectable-image" style="height: 125px; width: 125px; display: block; margin: auto;" src="{{ url_for('static', filename='images/earth-sc-3.png') }}"/>
+          <b class="center">Terracotta pots</b>
+        </div>
+      </div>
+      <br>
+      <!-- Second row of items -->
+      <div class="row" style="margin-left: 190px;">
+        <div class="col-md-3 selectable-item correct-item">
+          <img class="selectable-image" style="height: 125px; width: 125px; display: block; margin: auto;" src="{{ url_for('static', filename='images/earth-sc-4.png') }}"/>
+          <b class="center">Bamboo rug</b>
+        </div>
+        <div class="col-md-3 selectable-item incorrect-item">
+          <img class="selectable-image" style="height: 125px; width: 125px; display: block; margin: auto;" src="{{ url_for('static', filename='images/earth-sc-5.png') }}"/>
+          <b class="center">Cotton rug</b>
+        </div>
+        <div class="col-md-3 selectable-item correct-item">
+          <img class="selectable-image" style="height: 125px; width: 125px; display: block; margin: auto;" src="{{ url_for('static', filename='images/earth-sc-6.png') }}"/>
+          <b class="center">Wool rug</b>
+        </div>
+      </div>
+      <br>
+      <div class="row center" style="margin-left: 240px; margin-right: 240px">
+        <div class="col-md-3"></div>
+        <div class="col-md-3">
+            <button id="earth-self-check">Submit</button>
+            <button id="take-quiz-button" class="next-button" style="display: none; white-space: nowrap; margin-top: 20px; padding: 10px" onclick="window.location.href='quiz0';">Take Quiz</button>
+            <button id="try-again-button" class="try-button" style="display: none; white-space: nowrap; margin-top: 10px; padding: 10px" onclick="location.reload();"> Try again </button>
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+    </div>
+</div>
+  </body>
+</html>

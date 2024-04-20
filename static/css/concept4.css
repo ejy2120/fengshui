@@ -1,8 +1,55 @@
 .text-bubble3 {
-    text-align: center;
-    margin-top: 90px;
-    padding: 20px;
-    background-color: #ede2d7ff;
-    height: 100px;
-    border-radius: 20px;
-  }
+  text-align: center;
+  padding: 20px;
+  margin-top: -10px;
+  background-color: #ede2d7ff;
+  width: 600px;
+  height: auto;
+  border-radius: 20px;
+}
+
+.center{
+  display: flex; 
+  flex-direction: column; 
+  align-items: center
+}
+
+p{
+  font-size: 20px;
+}
+
+button {
+  font-size: 20px;
+  background-color: #cfb7a1ff;
+  color: white;
+  padding: 10px 20px 10px 20px;
+  border: none;
+  border-radius: 10px !important; 
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.selected {
+  border: 2px solid #654321;
+  cursor: pointer;
+}
+.selectable-image {
+  cursor: pointer;
+  transition: border 300ms ease;
+}
+
+#feedback-message {
+  margin-top: 20px;
+}
+
+.green-text {
+  color: #19676B;
+  font-weight: bold;
+}
+
+.red-text {
+  color: #E06666;
+  font-weight: bold;
+}
