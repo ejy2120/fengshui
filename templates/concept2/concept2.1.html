@@ -17,11 +17,6 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
     />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Spectral&display=swap"
-      rel="stylesheet"
-    />
     <title>Concept 2: Symmetry</title>
   </head>
   <body>
@@ -30,24 +25,44 @@
 
     <div class="container spectral-regular">
       <div class="row">
-        <h1 class="examples-header">Example of Symmetry</h1>
+        <div class="col-md-12">
+          <h2>Example of Symmetry</h2>
+        </div>
       </div>
 
       <div class="row">
-        <div class="col-md-8" id="symmetry-ex1">
-          <img src="{{ url_for('static', filename='images/sym-ex1.png') }}" />
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <img
+            src="{{ url_for('static', filename='images/sym-ex1.png') }}"
+            class="image img-fluid"
+          />
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <p class="mt-0">
+            To attain symmetry, have
+            <span class="green-text">objects in pairs</span>(e.g. nightstands)
+            on each side of the bed.
+          </p>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <button onclick="window.location.href='/concept2'" class="prev-btn">
+            < Prev
+          </button>
         </div>
 
-        <div class="col-md-4">
-          <div class="text-bubble">
-            To attain symmetry, have objects in pairs (e.g. nightstands) on each
-            side of the bed.
-          </div>
-          <button
-            onclick="window.location.href='/concept2-2'"
-            class="btn-next mt-3"
-          >
-            Next
+        <div class="col-md-6">
+          <button onclick="window.location.href='/concept2-2'" class="next-btn">
+            Next >
           </button>
         </div>
       </div>

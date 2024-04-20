@@ -12,14 +12,6 @@
   margin-bottom: 15px;
 }
 
-.correct-drop {
-  border: 3px solid #83a29d !important;
-}
-
-.incorrect-drop {
-  border: 3px solid #e06666 !important;
-}
-
 .try-button {
   margin-left: 255px;
   padding: 2px 8px;

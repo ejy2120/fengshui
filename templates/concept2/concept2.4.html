@@ -9,7 +9,6 @@
 
     <link rel="stylesheet" href="../static/css/main.css" />
     <link rel="stylesheet" href="../static/css/concept2.css" />
-
     <link
       rel="stylesheet"
       href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
@@ -18,7 +17,6 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
     />
-
     <title>Concept 2: Symmetry</title>
   </head>
   <body>
@@ -27,25 +25,46 @@
 
     <div class="container spectral-regular">
       <div class="row">
-        <h1 class="examples-header">Example of Symmetry</h1>
+        <div class="col-md-12">
+          <h2>Example of Symmetry</h2>
+        </div>
       </div>
 
       <div class="row">
-        <div class="col-md-8" id="symmetry-ex1">
-          <img src="{{ url_for('static', filename='images/sym-ex4.png') }}" />
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <img
+            src="{{ url_for('static', filename='images/sym-ex4.png') }}"
+            class="image img-fluid"
+          />
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <p class="mt-0">
+            Avoid <span class="red-text">mixing different items</span> – this
+            disrupts the balance and harmony of the space.
+          </p>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <button onclick="window.location.href='/concept2-3'" class="prev-btn">
+            < Prev
+          </button>
         </div>
 
-        <div class="col-md-4">
-          <div class="text-bubble">
-            Avoid mixing different items – this disrupts the balance and harmony
-            of the space.
-          </div>
-          <button onclick="window.location.href='/concept2-3'">Prev</button>
+        <div class="col-md-6">
           <button
             onclick="window.location.href='/concept2-5'"
-            class="btn-next mt-3"
+            class="self-check"
           >
-            Self-check
+            Self-check >
           </button>
         </div>
       </div>

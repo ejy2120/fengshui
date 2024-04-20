@@ -25,7 +25,7 @@
 
     <div class="container spectral-regular">
       <div class="row">
-        <div class="col-md-12" style="padding: 0px 20px 0px; margin: 0%">
+        <div class="col-md-12">
           <h2>{{ concept.header }}</h2>
         </div>
       </div>
@@ -35,26 +35,26 @@
         <div class="col-md-8">
           <img
             src="{{ url_for('static', filename='images/sym-ex1.png') }}"
-            style="width: 700px; height: auto"
+            class="image img-fluid"
           />
         </div>
         <div class="col-md-2"></div>
       </div>
 
       <div class="row">
-        <div class="col-md-3"></div>
-        <div class="col-md-6">
-          <p>{{ concept.text }}</p>
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <p class="mt-0">{{ concept.text }}</p>
         </div>
-        <div class="col-md-3"></div>
+        <div class="col-md-2"></div>
       </div>
 
       <div class="row">
-        <div class="col-md-6"></div>
-        <div class="col-md-6">
+        <div class="col-md-8"></div>
+        <div class="col-md-4">
           <button
             onclick="window.location.href='/concept2-1'"
-            style="margin-left: 160px"
+            class="responsive-btn"
           >
             Next
           </button>

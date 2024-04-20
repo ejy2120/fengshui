@@ -9,11 +9,11 @@
   font-family: "Spectral", serif;
 }
 
-.homepage-banner{
-  background-color: #dbd6d3ff; 
-  display: flex; 
-  flex-direction: vertical; 
-  align-items: center; 
+.homepage-banner {
+  background-color: #dbd6d3ff;
+  display: flex;
+  flex-direction: vertical;
+  align-items: center;
   justify-items: center;
   padding: 50px;
 }

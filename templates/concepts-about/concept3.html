@@ -4,14 +4,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Link to the common CSS file -->
-    <link rel="stylesheet" href="../static/css/common.css" />
-
-    <!-- Your existing script and stylesheet links -->
     <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
 
-    <link rel="stylesheet" href="../static/css/home.css" />
+    <link rel="stylesheet" href="../static/css/main.css" />
+    <link rel="stylesheet" href="../static/css/concept2.css" />
     <link
       rel="stylesheet"
       href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
@@ -20,18 +17,47 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
     />
-
     <title>Concept 3: Chi</title>
   </head>
   <body>
     <!--Include the navbar using Flask-->
     {% include 'navbar.html' %}
+
     <div class="container spectral-regular">
       <div class="row">
         <div class="col-md-12">
           <h2>{{ concept.header }}</h2>
-          <p>{{ concept.text }}</p>
-          <button onclick="window.location.href='/concept3-1'">Continue</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <img
+            src="{{ url_for('static', filename='images/chi-ex1.png') }}"
+            class="image img-fluid"
+          />
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <p class="mt-0">{{ concept.text }}</p>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-8"></div>
+        <div class="col-md-4">
+          <button
+            onclick="window.location.href='/concept3-1'"
+            class="responsive-btn"
+          >
+            Next >
+          </button>
         </div>
       </div>
     </div>
