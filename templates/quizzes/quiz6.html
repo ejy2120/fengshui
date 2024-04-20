@@ -37,46 +37,56 @@
         </div>
 
         <div class="row">
-            <div class="col-3">
-                
+          <div class="col-md-8">
+            <div class="row">
+              <img
+                src="{{ url_for('static', filename='images/chi-self-check.png') }}"
+                style="width: 800px"
+                id="chi-selfcheck"
+              />
             </div>
-            <div class="col-3">
-
+            <div class="row">
+              <div class="col-md-4">
+                <div class="droppable incorrect-div"></div>
+              </div>
+              <div class="col-md-4">
+                <div class="droppable correct-div"></div>
+              </div>
+              <div class="col-md-4"></div>
             </div>
-            <div class="col-3">
-
+          </div>
+  
+          <div class="col-md-4 chi-txt-and-mirror">
+            <div class="text-center">
+              <img
+                src="{{ url_for('static', filename='images/mirror.png') }}"
+                class="draggable"
+                id="mirror"
+                style="width: 198px"
+              />
             </div>
+            <div class="text-center text-bubble3">
+              Drag and drop the mirror to attain the most positive chi.
+            </div>
+            <button
+              id="next-concept-button"
+              class="next-button"
+              style="display: none; margin-top: 20px; padding: 10px"
+            >
+              Next Concept
+            </button>
+            <button
+              id="try-again-button"
+              class="try-button"
+              style="display: none; margin-top: 10px; padding: 10px"
+            >
+              Try again
+            </button>
+          </div>
         </div>
     </div>
 
-    <!-- <div class="container spectral-regular">
-      <div class="row">
-        <h1 class="examples-header">Move the <b>bed</b> to <b>command position</b> and <b>symmetry</b>.
-        </h1>
-      </div>
-
-      <div class="row">
-
-        <div class="col-md-8" id="command-ex">
-            <div class="row">
-                <img src="{{ url_for('static', filename='images/quiz1.png') }}"/>
-            </div>
-            <div class="row">
-                
-                <div class="col-md-4">
-                    <div class="droppable incorrect-div1"></div>
-                    <div class="droppable correct-div"></div>
-                </div>
-                <div class="col-md-4">
-                    <div class="droppable incorrect-div2"></div>
-                </div>
-                <div class="col-md-4"></div>
-            </div>   
-            
-                
-            
-        </div>
-
+<!-- 
         <div class="col-md-4">
             <div class="text-center">
                 <img src="{{ url_for('static', filename='images/quiz-bed.png') }}" class="draggable bed-img">
