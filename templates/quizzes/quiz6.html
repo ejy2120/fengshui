@@ -31,17 +31,18 @@
 
     <div class="container spectral-regular">
         <div class="row">
-            <h1 class="examples-header">
+            <h1 class="examples-header" style="font-size: 25px; margin-left: 40px; margin-bottom: 50px">
                 <b>Challenge question!</b> Drag and drop the <b>desk</b> to a <b>command position</b> in the room.
             </h1>
+            <div class="text-center text-bubble3" style="display: none;" id="feedback-message"></div>
         </div>
 
         <div class="row">
           <div class="col-md-8">
             <div class="row">
               <img
-                src="{{ url_for('static', filename='images/chi-self-check.png') }}"
-                style="width: 800px"
+                src="{{ url_for('static', filename='images/challenge-room.png') }}"
+                style="width: 500px"
                 id="chi-selfcheck"
               />
             </div>
@@ -59,14 +60,11 @@
           <div class="col-md-4 chi-txt-and-mirror">
             <div class="text-center">
               <img
-                src="{{ url_for('static', filename='images/mirror.png') }}"
+                src="{{ url_for('static', filename='images/desk.png') }}"
                 class="draggable"
-                id="mirror"
-                style="width: 198px"
+                id="desk"
+                style="width: 90px"
               />
-            </div>
-            <div class="text-center text-bubble3">
-              Drag and drop the mirror to attain the most positive chi.
             </div>
             <button
               id="next-concept-button"
