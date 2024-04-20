@@ -34,9 +34,9 @@ $(document).ready(function() {
 
             if (isSelected) {
                 if (isCorrect) {
-                    img.css('border', '3px solid #19676b'); // Correct and selected
+                    img.css('border', '2px solid #19676b'); // Correct and selected
                 } else {
-                    img.css('border', '3px solid #e06666'); // Incorrect and selected
+                    img.css('border', '2px solid #e06666'); // Incorrect and selected
                     incorrectSelections++; // Increment the counter for incorrect selections
                 }
             } else {

@@ -1,0 +1,25 @@
+.text-bubble3 {
+    text-align: center;
+    padding: 20px;
+    margin-top: -10px;
+    background-color: #ede2d7ff;
+    width: auto;
+    height: auto;
+    border-radius: 20px;
+    }
+    
+#feedback-message {
+    margin-left: 40px;
+    margin-bottom: 20px;
+    width: 1000px;
+  }
+  
+  .green-text {
+    color: #19676B;
+    font-weight: bold;
+  }
+  
+  .red-text {
+    color: #E06666;
+    font-weight: bold;
+  }

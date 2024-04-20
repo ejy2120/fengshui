@@ -8,7 +8,7 @@ with open('static/json/concept-about.json') as f:
     concepts_data = json.load(f)
 
 @app.route('/')
-def home2():
+def index():
     return render_template('home.html')
 
 @app.route('/home')
@@ -22,6 +22,14 @@ def about():
 @app.route('/learn')
 def learn():
     return render_template('learn.html')
+
+@app.route('/feng-shui-achieved')
+def fengshui():
+    return render_template('feng-shui-achieved.html')
+
+@app.route('/congrats')
+def congrats():
+    return render_template('congrats.html')
 
 # Route for "Concept about" pages
 @app.route('/concept<int:concept_id>')
