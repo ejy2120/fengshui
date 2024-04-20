@@ -11,6 +11,7 @@
     <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
 
+    <script src="{{ url_for('static', filename='scripts/quizScore.js') }}"></script>
     <link rel="stylesheet" href="../static/css/main.css" />
     <link rel="stylesheet" href="../static/css/concept1.css" />
     <link
@@ -32,7 +33,7 @@
       <div class="row">
         <div class="col-md-12 center">
           <p style="margin-bottom: 5px;">You got</p>
-          <h3 style="color: darkgreen; font-weight: bold;">_/5 correct</h3>
+          <h3 style="color: darkgreen; font-weight: bold;"><span id="quiz-score"></span>/5 correct</h3>
           <p>on the first try!</p>
         </div>
       </div>
@@ -47,11 +48,25 @@
         <div class="col-md-2"></div>
       </div>
 
-      <div class="row">
-        <div class="col-md-3 center d-flex justify-content-end" style="margin-left: 440px">
-          <button onclick="window.location.href='/home'" style="white-space: nowrap">Collect and return home</button>
+      <div class="row center">
+        <div class="col-md-3 center d-flex justify-content-end">
+          <button id="return-home" onclick="window.location.href='/home'" style="white-space: nowrap">Collect and return home</button>
         </div>
       </div>
     </div>
+    <script>
+      $(document).ready(function() {
+        resetScore();
+        var finalScore = getScore(); // Retrieve the final score
+        console.log(finalScore);
+        $("#quiz-score").text(finalScore); // Display the score on the page
+
+        // Reset the score when the "Collect and return home" button is clicked
+        $("#return-home").click(function() {
+          resetScore(); // Reset the quiz score
+          window.location.href = "/home"; // Navigate back home
+        });
+      });
+    </script>
   </body>
 </html>

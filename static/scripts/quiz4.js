@@ -1,5 +1,8 @@
 $(document).ready(function() {
+    var questionId = "quiz4"; // Unique identifier for this quiz question
+
     $('#select-polyester').click(function() {
+        markAttempted(questionId); // Mark this question as attempted
         $('#polyester-rug').css('border', '3px solid #e06666ff');
         $('#polyester-rug').css('border-radius', '20px');
         $('#feedback-message').html("Choose a rug made of <span class='red-text'><b>natural material</b></span> to align with the earth element.")
@@ -12,6 +15,7 @@ $(document).ready(function() {
     });
 
     $('#select-cotton').click(function() {
+        markAttempted(questionId); // Mark this question as attempted
         $('#cotton-rug').css('border', '3px solid #e06666ff');
         $('#cotton-rug').css('border-radius', '20px');
         $('#feedback-message').html("Choose a rug with a <span class='red-text'><b>balanced/soft shape</b></span> to align with the earth element.")
@@ -24,6 +28,9 @@ $(document).ready(function() {
     });
 
     $('#select-fiber').click(function() {
+        if (!isAttempted(questionId)) { // Check if it's the first correct attempt
+            correctAnswer(questionId); // Increment the score
+        }
         $('#fiber-rug').css('border', '3px solid #83a29d');
         $('#fiber-rug').css('border-radius', '20px');
         $('#feedback-message').html("Correct! This rug is made of <span class='green-text'><b>natural material</b></span> and has a <span class='green-text'><b>balanced shape</b></span>, which promotes the earth element’s <span class='green-text'><b>stability</b></span>.")

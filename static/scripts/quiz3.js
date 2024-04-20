@@ -3,6 +3,7 @@ $(document).ready(function () {
   let originalBackgroundColor = $(".text-bubble3").css("background-color");
 
   let bedDraggable = true;
+  const questionId = "quiz3"; // Unique identifier for this quiz question
 
   // Make the bed image draggable
   $(".draggable").draggable({
@@ -24,6 +25,10 @@ $(document).ready(function () {
 
         $("#try-again-button").hide();
 
+        if (!isAttempted(questionId)) { // Check if it's the first correct attempt
+          correctAnswer(questionId); // Increment the score
+        }
+
         // If dropped into the correct div, show a good message
         $(".text-bubble3").html(
           "Correct! The mirror will <span class='green-text'>reflect natural light from the window</span>, which <span class='green-text'>amplifies the positive <i>chi</i></span> in the room!"
@@ -40,6 +45,7 @@ $(document).ready(function () {
           "{{ url_for('static', filename='images/com-selfcheck-right.png') }}"
         );
       } else if (droppable.hasClass("incorrect-div")) {
+        markAttempted(questionId); // Mark this question as attempted
         $("#next-concept-button").hide();
 
         $("#try-again-button").show();

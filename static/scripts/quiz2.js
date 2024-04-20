@@ -1,6 +1,7 @@
 $(document).ready(function () {
   var correctItems = ["quiz-dresser1.png", "quiz-dresser2.png"];
   var droppedItems = [];
+  var questionId = "quiz2"; // Unique identifier for this quiz question
   // Store the original text
   var originalText = $(".text-bubble2").text();
   var originalBackgroundColor = $(".text-bubble2").css("background-color");
@@ -29,6 +30,10 @@ $(document).ready(function () {
         console.log("Correct Items String:", correctItemsStr);
 
         if (droppedItemsStr === correctItemsStr) {
+          if (!isAttempted(questionId)) { // Check if it's the first correct attempt
+            correctAnswer(questionId); // Increment the score
+          }
+
           console.log("Correct items matched");
           $(".droppable").addClass("correct-drop");
           $("#next-concept-button").show();
@@ -46,6 +51,7 @@ $(document).ready(function () {
           });
         } else {
           console.log("Incorrect items matched");
+          markAttempted(questionId); // Mark this question as attempted
           $(".droppable").addClass("incorrect-drop");
           $("#next-concept-button").hide();
           $("#try-again-button").show();
