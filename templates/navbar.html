@@ -3,14 +3,6 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
-    <script
-      type="text/javascript"
-      src="{{ url_for('static', filename = 'homepage.js') }}"
-    ></script>
-
     <link rel="stylesheet" href="../static/css/navbar.css" />
     <link
       rel="stylesheet"
@@ -29,11 +21,14 @@
     />
     <title>Feng Shui Nav Bar</title>
   </head>
-
   <body>
     <div class="container spectral-regular">
       <div class="navbar">
-        <div class="navbar-brand"><a href="/home" style="color: black">Feng Shui</a></div>
+        <div class="navbar-brand">
+          <a href="/home" style="color: black"
+            >Feng Shui | <span class="image-span"></span
+          ></a>
+        </div>
         <div class="navbar-links">
           <a href="/home">Home</a>
           <a href="/about">About</a>
@@ -44,6 +39,14 @@
       <hr />
     </div>
 
+    <!-- Your page content here -->
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+    <script
+      type="text/javascript"
+      src="{{ url_for('static', filename = 'homepage.js') }}"
+    ></script>
     <script>
       $(document).ready(function () {
         var path = window.location.pathname;
@@ -52,6 +55,15 @@
             $(this).addClass("active-page");
           }
         });
+
+        // Check if the current page is a concept page
+        if (path.startsWith("/concept")) {
+          $(".navbar-links a[href='/learn']").addClass("active-page");
+        }
+        // Check if the current page is a quiz page
+        if (path.startsWith("/quiz")) {
+          $(".navbar-links a[href='/quiz0']").addClass("active-page");
+        }
       });
     </script>
   </body>

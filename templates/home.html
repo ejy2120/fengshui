@@ -25,45 +25,71 @@
   <body>
     <!--Include the navbar using Flask-->
     {% include 'navbar.html' %}
-
     <div class="container">
-      <div class="content row homepage-banner"> 
+      <div class="content row homepage-banner">
         <div class="col-md-2"></div>
         <div class="col-md-8">
           <h1 id="feng-shui-header">Feng Shui</h1>
-          <p>Principles for a harmonious bedroom layout!</p>
+          <p class="home-text">Principles for a harmonious bedroom layout!</p>
         </div>
         <div class="col-md-2"></div>
-        
       </div>
       <div class="content row">
-        <div class="col-md-2"></div>       
+        <div class="col-md-2"></div>
         <div class="col-md-8">
-          <h3  style="margin-bottom: -30px">Start Learning</h3>
+          <h3 style="margin-bottom: -30px">Start Learning</h3>
           <div class="row">
-            <div class="col-md-12" style="margin-bottom: -100px; margin-left: 10px">
-                <button class="learn-button" onclick="window.location.href='/about'">
-                  <img src="{{ url_for('static', filename='images/about-home.png') }}" style="width:100px;"/>
-                  <br>
-                  About</button>
+            <div
+              class="col-md-12"
+              style="margin-bottom: -100px; margin-left: 10px"
+            >
+              <button
+                class="learn-button"
+                onclick="window.location.href='/about'"
+              >
+                <img
+                  src="{{ url_for('static', filename='images/about-home.png') }}"
+                  style="width: 100px"
+                />
+                <br />
+                About
+              </button>
             </div>
           </div>
 
           <div class="row">
             <div class="col-md-2"></div>
-            <div class="col-md-4"  style="margin-bottom: -100px; margin-right: 10px">
+            <div
+              class="col-md-4"
+              style="margin-bottom: -100px; margin-right: 10px"
+            >
               <div>
-                <button class="learn-button" onclick="window.location.href='/concept1'">
-                  <img src="{{ url_for('static', filename='images/command-home.png') }}" style="width:150px;"/>
-                  <br>
+                <button
+                  class="learn-button"
+                  onclick="window.location.href='/concept1'"
+                >
+                  <img
+                    src="{{ url_for('static', filename='images/command-home.png') }}"
+                    style="width: 150px"
+                  />
+                  <br />
                   Command Position
                 </button>
               </div>
             </div>
-            <div class="col-md-4"  style="margin-bottom: -100px; margin-right: 10px">
-              <button class="learn-button" onclick="window.location.href='/concept2'">
-                <img src="{{ url_for('static', filename='images/symmetry-home.png') }}" style="width:150px;"/>
-                <br>
+            <div
+              class="col-md-4"
+              style="margin-bottom: -100px; margin-right: 10px"
+            >
+              <button
+                class="learn-button"
+                onclick="window.location.href='/concept2'"
+              >
+                <img
+                  src="{{ url_for('static', filename='images/symmetry-home.png') }}"
+                  style="width: 150px"
+                />
+                <br />
                 Symmetry
               </button>
             </div>
@@ -72,17 +98,35 @@
 
           <div class="row">
             <div class="col-md-2"></div>
-            <div class="col-md-4"  style="margin-bottom: -100px; margin-right: 10px">
-              <button class="learn-button" onclick="window.location.href='/concept3'">
-                <img src="{{ url_for('static', filename='images/chi-home.png') }}" style="width:150px;"/>
-                <br>
+            <div
+              class="col-md-4"
+              style="margin-bottom: -100px; margin-right: 10px"
+            >
+              <button
+                class="learn-button"
+                onclick="window.location.href='/concept3'"
+              >
+                <img
+                  src="{{ url_for('static', filename='images/chi-home.png') }}"
+                  style="width: 150px"
+                />
+                <br />
                 Chi
               </button>
             </div>
-            <div class="col-md-4"  style="margin-bottom: -100px; margin-right: 10px">
-              <button class="learn-button" onclick="window.location.href='/concept4'">
-                <img src="{{ url_for('static', filename='images/earth-home.png') }}" style="width:125px;"/>
-                <br>
+            <div
+              class="col-md-4"
+              style="margin-bottom: -100px; margin-right: 10px"
+            >
+              <button
+                class="learn-button"
+                onclick="window.location.href='/concept4'"
+              >
+                <img
+                  src="{{ url_for('static', filename='images/earth-home.png') }}"
+                  style="width: 125px"
+                />
+                <br />
                 Earth Element
               </button>
             </div>
@@ -90,12 +134,6 @@
           </div>
         </div>
         <div class="col-md-2"></div>
-        
-        
-        
-        
-        
-        
       </div>
     </div>
   </body>

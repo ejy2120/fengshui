@@ -12,6 +12,7 @@ body {
 
 .container {
   margin: 0 auto;
+  padding: 20px; /* Add more padding for better spacing */
 }
 .navbar {
   display: flex;
@@ -20,9 +21,20 @@ body {
   /* padding: 10px 0; */
 }
 .navbar-brand {
+  display: inline-block;
   font-size: 24px;
   font-weight: bold;
 }
+
+.image-span {
+  margin-bottom: -6%;
+  display: inline-block;
+  width: 60px; /* Adjust width as needed */
+  height: 30px; /* Adjust height as needed */
+  background-image: url("../images/chinese-defn.jpeg"); /* Replace 'path_to_your_image.jpg' with the actual path to your image */
+  background-size: cover;
+}
+
 .navbar-links {
   display: flex;
   text-decoration: none;
@@ -44,6 +56,8 @@ body {
 .navbar-links .navbar a:last-child {
   margin-right: 0;
 }
+
+/* navbar.css */
 .active-page {
   background-color: #cfb7a1;
   color: #ffffff !important; /* Change text color to white */

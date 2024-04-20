@@ -7,8 +7,8 @@
     <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
 
-    <link rel="stylesheet" href="../static/css/main.css"/>
-    <link rel="stylesheet" href="../static/css/quiz0.css"/>
+    <link rel="stylesheet" href="../static/css/main.css" />
+    <link rel="stylesheet" href="../static/css/quiz0.css" />
     <link
       rel="stylesheet"
       href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
@@ -22,16 +22,36 @@
   <body>
     <!--Include the navbar using Flask-->
     {% include 'navbar.html' %}
-
     <div class="container spectral-regular">
       <div class="row">
         <div class="col-md-12">
-          <h2 style="margin-top: 20px">Quiz</h2>
-          <p style="font-size: 20px; margin-top: 20px"><b>Rearrange the furniture</b> in the provided bedroom layout according to feng shui principles.</p>
-          <p style="font-size: 20px; margin-top: 20px">Each furniture item will show up <b>one by one</b>.</p>
-          <button onclick="window.location.href='/quiz1'">
-            Start Quiz
-          </button>
+          <h2 style="margin-left: 45px; padding: 10px">Quiz</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <img
+            src="{{ url_for('static', filename='images/quiz-home.png') }}"
+            class="img-fluid"
+            style="width: 880px; margin-top: -5%"
+            alt="Learn Image"
+          />
+        </div>
+        <div class="col-md-6">
+          <div class="row">
+            <p style="font-size: 20px; margin-top: 15px; line-height: 50px">
+              <b>Rearrange the furniture</b> in the provided bedroom layout
+              according to feng shui principles.
+              <br />
+              Each furniture item will show up <b>one by one</b>.
+            </p>
+            <button
+              onclick="window.location.href='/quiz1'"
+              style="margin: 8% 0% 0% 70%"
+            >
+              Start Quiz
+            </button>
+          </div>
         </div>
       </div>
     </div>

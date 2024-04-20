@@ -1,5 +1,5 @@
 .text-bubble3 {
-  margin-top: 75px;
+  margin-top: 50px;
   padding: 20px;
   background-color: #ede2d7ff;
   height: auto;
@@ -12,43 +12,41 @@ h2 {
   margin-left: 245px;
 }
 .image {
-  width: 750px;
+  width: 100%;
   height: auto;
   margin-top: -4%;
   margin-right: 20px;
-  margin-bottom: -5%;
+  margin-bottom: -8%;
 }
 
 p {
-  font-size: 18px;
+  font-size: 20px;
   margin: 0px 80px 0px;
 }
 
 #chi-selfcheck {
-  margin-left: -20%;
+  margin-left: -18%;
+  margin-top: -10px;
 }
 
 #mirror {
   margin-top: 28%;
 }
 
-.chi-txt-and-mirror {
-  margin-left: -8%;
-}
 .incorrect-div {
   border: none;
-  width: 85px;
-  height: 135px;
-  margin-top: -75%;
-  margin-left: 80%;
+  width: 80px;
+  height: 150px;
+  margin-top: -58%;
+  margin-left: 98%;
 }
 
 .correct-div {
   border: none;
-  width: 85px;
-  height: 135px;
-  margin-top: -2%;
-  margin-left: 40%;
+  width: 80px;
+  height: 155px;
+  margin-top: -18%;
+  margin-left: 72%;
 }
 
 button {

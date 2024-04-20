@@ -29,7 +29,10 @@ $(document).ready(function () {
           "Great! The mirror will <span class='green-text'>amplify the natural light and views</span> that the window offers, boosting positive chi."
         );
 
-        $(".text-bubble3").css("background-color", "#DDEEEA");
+        $(".text-bubble3").css({
+          "background-color": "#DDEEEA",
+          "margin-top": "10px",
+        });
 
         $(".green-text").css({ color: "#19676B", "font-weight": "bold" });
 
@@ -49,9 +52,15 @@ $(document).ready(function () {
           "Even though the mirror somewhat reflects beautiful art, the mirror  <span class='red-text'>reflects positive chi out</span> of the room."
         );
 
-        $(".text-bubble3").css("background-color", "#F7DAD2");
+        $(".text-bubble3").css({
+          "background-color": "#F7DAD2",
+          "margin-top": "10px",
+        });
 
-        $(".red-text").css({ color: "#E06666", "font-weight": "bold" });
+        $(".red-text").css({
+          color: "#E06666",
+          "font-weight": "bold",
+        });
 
         bedDraggable = false; // Disable draggable behavior so user cannot drag bed to correct location right after
         $(".draggable").draggable("disable"); // Disable draggable behavior
