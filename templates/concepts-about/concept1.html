@@ -35,21 +35,29 @@
       <div class="row">
         <div class="col-md-2"></div>
         <div class="col-md-8 center">
-          <img src="{{ url_for('static', filename='images/command-1.png') }}" style="width:400px; margin-top: 30px"/>
+          <img
+            src="{{ url_for('static', filename='images/command-1.png') }}"
+            style="width: 700px; margin-top: -8%; margin-right: 10%"
+          />
         </div>
         <div class="col-md-2"></div>
       </div>
 
       <div class="row center">
         <div class="col-md-3"></div>
-        <div class="col-md-6 d-flex justify-content-end" style="margin-top: 30px">
+        <div
+          class="col-md-6 d-flex justify-content-end"
+          style="margin-top: -2%"
+        >
           <p>{{ concept.text}}</p>
         </div>
-        <div class="col-md-3 d-flex justify-content-end" style="margin-left: 200px">
+        <div
+          class="col-md-3 d-flex justify-content-end"
+          style="margin-left: 200px"
+        >
           <button onclick="window.location.href='/concept1-1'">Next ></button>
         </div>
       </div>
-
     </div>
   </body>
 </html>

@@ -1,6 +1,7 @@
 #command-ex img {
-  max-width: 100%;
+  max-width: 110%;
   height: auto;
+  margin-left: -15%;
 }
 
 .text-bubble3 {
@@ -13,14 +14,14 @@
   border-radius: 20px;
 }
 
-.incorrect-div{
+.incorrect-div {
   border: none;
   width: 200px;
   height: 150px;
   margin-top: -80%;
 }
 
-.correct-div{
+.correct-div {
   border: none;
   width: 150px;
   height: 200px;
@@ -28,18 +29,19 @@
   margin-left: -30%;
 }
 
-.bed-img{
+.bed-img {
   width: 150px;
   margin-bottom: 50px;
+  margin-top: 50px;
 }
 
-.center{
-  display: flex; 
-  flex-direction: column; 
-  align-items: center
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-p{
+p {
   font-size: 20px;
 }
 
@@ -49,10 +51,18 @@ button {
   color: white;
   padding: 10px 20px 10px 20px;
   border: none;
-  border-radius: 10px !important; 
+  border-radius: 10px !important;
   cursor: pointer;
 }
 
 button:hover {
   cursor: pointer;
+}
+
+.prev-btn {
+  margin-left: 50%;
+}
+
+.next-btn {
+  margin-left: 30%;
 }

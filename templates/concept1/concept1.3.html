@@ -31,34 +31,57 @@
 
     <div class="container spectral-regular">
       <div class="row">
-        <h1 class="examples-header">Self-Check: Command Position</h1>
+        <h1
+          class="examples-header"
+          style="margin-bottom: -10%; margin-top: -15px"
+        >
+          Self-Check: Command Position
+        </h1>
       </div>
 
       <div class="row">
         <div class="col-md-8" id="command-ex">
-            <div class="row">
-                <img src="{{ url_for('static', filename='images/command-selfcheck.png') }}" style="width: 700px"/>
+          <div class="row">
+            <img
+              src="{{ url_for('static', filename='images/command-selfcheck.png') }}"
+            />
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="droppable incorrect-div"></div>
             </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="droppable incorrect-div"></div>
-                </div>
-                <div class="col-md-4">
-                    <div class="droppable correct-div"></div>
-                </div>
-                <div class="col-md-4"></div>
-            </div>   
-                
-            
+            <div class="col-md-4">
+              <div class="droppable correct-div"></div>
+            </div>
+            <div class="col-md-4"></div>
+          </div>
         </div>
 
         <div class="col-md-4">
-            <div class="text-center">
-                <img src="{{ url_for('static', filename='images/bed3.png') }}" class="draggable bed-img" style="width: 150px">
-            </div>
-            <div class="text-center text-bubble3">Drag and drop the bed to the command position.</div>
-            <button id="next-concept-button" class="next-button" style="display: none; margin-top: 20px; padding: 10px">Next Concept</button>
-            <button id="try-again-button" class="try-button" style="display: none; margin-top: 10px; padding: 10px"> Try again </button>
+          <div class="text-center">
+            <img
+              src="{{ url_for('static', filename='images/bed2.png') }}"
+              class="draggable bed-img"
+              style="width: 200px; margin-top: 90px"
+            />
+          </div>
+          <div class="text-center text-bubble3">
+            Drag and drop the bed to the command position.
+          </div>
+          <button
+            id="next-concept-button"
+            class="next-button"
+            style="display: none; margin-top: 20px; padding: 10px"
+          >
+            Next Concept
+          </button>
+          <button
+            id="try-again-button"
+            class="try-button"
+            style="display: none; margin-top: 10px; padding: 10px"
+          >
+            Try again
+          </button>
         </div>
       </div>
     </div>
