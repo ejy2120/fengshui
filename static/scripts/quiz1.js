@@ -24,10 +24,9 @@ $(document).ready(function() {
             $("#next-question-button").show();
 
             $("#try-again-button").hide();
-
-            if (!isAttempted(questionId)) { // Check if it's the first correct attempt
-              correctAnswer(questionId); // Increase the score
-            }
+            
+            correctAnswer(questionId); // Increase the score
+            console.log(score);
 
             // If dropped into the correct div, show a good message
             $(".text-bubble3").html("Well done! You placed the bed in the command position. The bed has a <span class='green-text'><b>sweeping view of the door/room</b></span> but is <span class='green-text'><b>not in direct line</b></span> of the door.");
@@ -37,7 +36,8 @@ $(document).ready(function() {
             $(".green-text").css({ color: "#19676B", "font-weight": "bold" });
 
         } else if (droppable.hasClass("incorrect-div1")) {
-            markAttempted(questionId); // Mark this question as attempted
+            markAttempted(questionId); // Mark this question as attempted; do not increment score 
+
             $("#next-question-button").hide();
 
             $("#try-again-button").show();
@@ -53,7 +53,7 @@ $(document).ready(function() {
             $(".draggable").draggable("disable"); // Disable draggable behavior
         }
         else if (droppable.hasClass("incorrect-div2")) {
-            markAttempted(questionId); // Mark this question as attempted
+            markAttempted(questionId); // Mark this question as attempted; do not increment score 
 
             $("#next-question-button").hide();
 

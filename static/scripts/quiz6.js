@@ -5,6 +5,8 @@ $(document).ready(function () {
         revert: "invalid", // Reverts the position if dropped in a non-droppable area
     });
 
+    const questionId = "quiz6";
+
     // Make the correct div droppable
     $(".correct-div").droppable({
         accept: "#desk", // Accepts only the desk image
@@ -14,6 +16,9 @@ $(document).ready(function () {
                             .show();
             $("#try-again-button").hide(); // Hide the "try again" button
             $("#next-concept-button").show(); // Show the "next concept" button
+
+            correctAnswer(questionId); // Increase the score
+            console.log(score);
         },
     });
 
@@ -26,6 +31,8 @@ $(document).ready(function () {
                                 .show();
             $("#try-again-button").show(); // Show the "try again" button
             $("#next-concept-button").hide(); // Hide the "next concept" button
+
+            markAttempted(questionId); // Mark this question as attempted; do not increment score 
         },
     });
 });

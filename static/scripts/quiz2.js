@@ -30,9 +30,7 @@ $(document).ready(function () {
         console.log("Correct Items String:", correctItemsStr);
 
         if (droppedItemsStr === correctItemsStr) {
-          if (!isAttempted(questionId)) { // Check if it's the first correct attempt
-            correctAnswer(questionId); // Increment the score
-          }
+          correctAnswer(questionId); // Increase the score
 
           console.log("Correct items matched");
           $(".droppable").addClass("correct-drop");

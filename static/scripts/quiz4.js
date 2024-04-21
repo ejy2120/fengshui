@@ -28,9 +28,8 @@ $(document).ready(function() {
     });
 
     $('#select-fiber').click(function() {
-        if (!isAttempted(questionId)) { // Check if it's the first correct attempt
-            correctAnswer(questionId); // Increment the score
-        }
+        correctAnswer(questionId); // Increase the score
+        
         $('#fiber-rug').css('border', '3px solid #83a29d');
         $('#fiber-rug').css('border-radius', '20px');
         $('#feedback-message').html("Correct! This rug is made of <span class='green-text'><b>natural material</b></span> and has a <span class='green-text'><b>balanced shape</b></span>, which promotes the earth element’s <span class='green-text'><b>stability</b></span>.")

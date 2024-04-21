@@ -2,9 +2,8 @@ $(document).ready(function() {
     var questionId = "quiz5"; // Unique identifier for this quiz question
 
     $('#select-clay').click(function() {
-        if (!isAttempted(questionId)) { // Check if it's the first correct attempt
-            correctAnswer(questionId); // Increment the score
-        }
+        correctAnswer(questionId); // Increase the score
+        
         $('#clay-vase').css('border', '3px solid #83a29d');
         $('#clay-vase').css('border-radius', '20px');
         $('#feedback-message').html("Correct! These vases are made of <span class='green-text'><b>clay</b></span>, a <span class='green-text'><b>natural material</b></span> which is connected to the <span class='green-text'><b>earth element</b></span> and brings a feeling of <span class='green-text'><b>groundedness</b></span>.")

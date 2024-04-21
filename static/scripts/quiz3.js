@@ -25,10 +25,8 @@ $(document).ready(function () {
 
         $("#try-again-button").hide();
 
-        if (!isAttempted(questionId)) { // Check if it's the first correct attempt
-          correctAnswer(questionId); // Increment the score
-        }
-
+        correctAnswer(questionId); // Increase the score
+        
         // If dropped into the correct div, show a good message
         $(".text-bubble3").html(
           "Correct! The mirror will <span class='green-text'>reflect natural light from the window</span>, which <span class='green-text'>amplifies the positive <i>chi</i></span> in the room!"
