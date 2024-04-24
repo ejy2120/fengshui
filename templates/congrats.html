@@ -32,8 +32,10 @@
     <div class="container spectral-regular">
       <div class="row">
         <div class="col-md-12 center">
-          <p style="margin-bottom: 5px;">You got</p>
-          <h3 style="color: #83a29d; font-weight: bold;"><span id="quiz-score"></span>/6 correct</h3>
+          <p style="margin-bottom: 5px">You got</p>
+          <h3 style="color: #83a29d; font-weight: bold">
+            <span id="quiz-score"></span>/6 correct
+          </h3>
           <p style="margin-bottom: 50px">on the first try!</p>
         </div>
       </div>
@@ -41,8 +43,11 @@
       <div class="row">
         <div class="col-md-2"></div>
         <div class="col-md-8 center">
-          <img src="{{ url_for('static', filename='images/house-plant.webp') }}" style="width:200px"/>
-          <br>
+          <img
+            src="{{ url_for('static', filename='images/house-plant.png') }}"
+            style="width: 350px; margin-top: -35px; margin-bottom: -20px"
+          />
+          <br />
           <p>Here’s a plant as a <b>housewarming gift!</b></p>
         </div>
         <div class="col-md-2"></div>
@@ -50,21 +55,27 @@
 
       <div class="row center">
         <div class="col-md-3 center d-flex justify-content-end">
-          <button id="return-home" onclick="window.location.href='/home'" style="white-space: nowrap">Collect and return home</button>
+          <button
+            id="return-home"
+            onclick="window.location.href='/home'"
+            style="white-space: nowrap"
+          >
+            Collect and return home
+          </button>
         </div>
       </div>
     </div>
     <script>
-      $(document).ready(function() {
-       // var finalScore = getScore(); // Retrieve the final score
-     //   console.log(finalScore);
-     //   $("#quiz-score").text(finalScore); // Display the score on the page
+      $(document).ready(function () {
+        // var finalScore = getScore(); // Retrieve the final score
+        //   console.log(finalScore);
+        //   $("#quiz-score").text(finalScore); // Display the score on the page
         console.log(score);
         $("#quiz-score").text(score);
         resetScore();
 
         // Reset the score when the "Collect and return home" button is clicked
-        $("#return-home").click(function() {
+        $("#return-home").click(function () {
           resetScore(); // Reset the quiz score
           window.location.href = "/home"; // Navigate back home
         });
