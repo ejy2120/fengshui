@@ -66,3 +66,13 @@ button:hover {
 .next-btn {
   margin-left: 30%;
 }
+
+.green-text {
+  color: #19676B;
+  font-weight: bold;
+}
+
+.red-text {
+  color: #E06666;
+  font-weight: bold;
+}
