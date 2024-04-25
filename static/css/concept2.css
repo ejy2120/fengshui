@@ -100,13 +100,3 @@ button:hover {
   height: auto;
   max-width: 80%;
 }
-
-.green-text {
-  color: #19676b;
-  font-weight: bolder;
-}
-
-.red-text {
-  color: #e06666;
-  font-weight: bolder;
-}
